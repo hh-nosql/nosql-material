@@ -16,6 +16,12 @@ The course assessment is either pass or fail. A passing completion of the course
 <!-- TODO -->
 _To confirm the course participation, pass the "Introduction to NoSQL database management systems" Moodle exam before Thursday 30.10. at 23:59_ (details in the first, [Introduction to NoSQL database management systems](./material/1-nosql-introduction.md), section). Otherwise, individual sections of the course don't have deadlines, but instead, there's a single _final deadline for the remaining coursework on Sunday 14.12. at 23:59_.
 
+## 🧠 Using generative AI tools
+
+⚠️ **Using generative AI tools (e.g., ChatGPT or Copilot) to generate solutions directly is strictly forbidden** and considered plagiarism. Misusing these tools won't help you learn, and you won't get anything out of the course.
+
+💡 Instead, you can (and should) use generative AI tools to ask about generic topics, such as "What are the comparison operators in MongoDB?" or "How to connect to MongoDB using PyMongo?".
+
 ## 🎓 Learning objectives
 
 After completing this course, you know how to...

@@ -150,7 +150,7 @@ client = MongoClient(MONGODB_URI)
 > [!IMPORTANT]  
 > Exercise 2 👨‍💻: Implement a Python database application based on the requirements.
 
-## Submitting the coursework
+## Submitting the project
 
 You are done, good job! 🎉 The last thing to do is to submit the project. There are two ways to do it:
 

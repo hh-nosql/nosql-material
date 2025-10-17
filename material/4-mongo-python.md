@@ -1,10 +1,10 @@
 # MongoDB with Python
 
-In the fourth section of the course, we learn how to use MongoDB with the Python programming language. During this section, you will learn how to build a database application using Python and the PyMongo library.
+In the fourth section of the course, we learn how to use MongoDB with the Python programming language. During this section, you will learn how to build a database application using Python and the PyMongo package.
 
 ## PyMongo
 
-PyMongo is a Python library containing tools for working with MongoDB and is the recommended way to work with MongoDB from Python. With PyMongo, we can execute similar database operations as we did with the MongoDB Shell, but using Python. This is handy when we want to implement database applications instead of just executing queries.
+[PyMongo](https://www.mongodb.com/docs/languages/python/pymongo-driver/current/get-started/) is a Python package containing tools for working with MongoDB and is the recommended way to work with MongoDB from Python. With PyMongo, we can execute similar database operations as we did with the MongoDB Shell, but using Python. This is handy when we want to implement database applications instead of just executing queries.
 
 ```mermaid
 flowchart LR
@@ -12,7 +12,7 @@ flowchart LR
     db-- Query response --> app
 ```
 
-First things first, we need to install the PyMongo library. To install external packages, like PyMongo, we need to use a package installer tool, such as [pip](https://packaging.python.org/en/latest/tutorials/installing-packages/). On a Windows computer, execute (type in the command and press the <kbd>Enter</kbd> key) the following command in the [PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.4) application, and on a macOS computer in the [Terminal](https://support.apple.com/en-gb/guide/terminal/welcome/mac) application:
+First things first, we need to install the PyMongo package. To install external packages, like PyMongo, we need to use a package installer tool, such as [pip](https://packaging.python.org/en/latest/tutorials/installing-packages/). On a Windows computer, execute (type in the command and press the <kbd>Enter</kbd> key) the following command in the [PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.4) application, and on a macOS computer in the [Terminal](https://support.apple.com/en-gb/guide/terminal/welcome/mac) application:
 
 ```bash
 python -m pip install pymongo
@@ -20,6 +20,9 @@ python -m pip install pymongo
 
 > [!TIP]  
 > If the command doesn't work, try the `python3` command instead of the `python` command. The correct command depends on the Python installation.
+
+> [!TIP] 
+> In more complicated Python projects, packages are installed within project-specific [virtual envinronments](https://www.w3schools.com/python/python_virtualenv.asp).
 
 Next, let's do some simple MongoDB operations with PyMongo in _small steps_:
 

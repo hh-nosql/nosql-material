@@ -12,7 +12,7 @@ flowchart LR
     db-- Query response --> app
 ```
 
-First things first, we need to install the PyMongo library. On a Windows computer, execute (type in the command and press the <kbd>Enter</kbd> key) the following command in the [PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.4) application, and on a macOS computer in the [Terminal](https://support.apple.com/en-gb/guide/terminal/welcome/mac) application:
+First things first, we need to install the PyMongo library. To install external packages, like PyMongo, we need to use a package installer tool, such as [pip](https://packaging.python.org/en/latest/tutorials/installing-packages/). On a Windows computer, execute (type in the command and press the <kbd>Enter</kbd> key) the following command in the [PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.4) application, and on a macOS computer in the [Terminal](https://support.apple.com/en-gb/guide/terminal/welcome/mac) application:
 
 ```bash
 python -m pip install pymongo

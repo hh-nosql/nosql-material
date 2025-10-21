@@ -169,8 +169,8 @@ RETURN a.name AS Actor;
   - **MongoDB** and **Redis** NoSQL DBMSs are in the **top four most widely used DBMSs** right after PostgreSQL and MySQL
   - 74.4% percentage of respondents have used MongoDB and 73.3% have used Redis
 - This indicates that **NoSQL DBMSs are widely acknowledged and used in the industry** despite not being as popular as certain relational DBMSs
-- In web-development, different kind of **tech stacks containing MongoDB are widely adobted**
-- MERN (MongoDB, Express, Express, Node) and MEAN (MongoDB, Express, Angular, Node) are acronyms for such common tech stacks
+- In web-development, different kind of **tech stacks containing MongoDB are widely adopted**
+- MERN (MongoDB, Express, React, Node) and MEAN (MongoDB, Express, Angular, Node) are acronyms for such common tech stacks
 
 ---
 layout: image-left

@@ -19,7 +19,7 @@ The [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) operat
 
 Read the [Insert Documents](https://www.mongodb.com/docs/manual/tutorial/insert-documents/) guide. Then, insert a single document to the `books` collection with the following details using the `insertOne` method:
 
-| title                 | author        | year | genres                          | copies | ebook |
+| title                 | author        | year | categories                          | copies | ebook |
 | --------------------- | ------------- | ---- | ------------------------------- | ------ | ----- |
 | "Pride and Prejudice" | "Jane Austen" | 1813 | "Romance", "Classic", "Fiction" | 3      | false |
 
@@ -27,7 +27,7 @@ The data should be in the following format:
 
 - The `title` and `author` field values should be strings
 - The `copies` and `year` field values should be integers
-- The `genres` field value should be an [array](https://www.mongodb.com/docs/manual/tutorial/query-arrays/) of strings representing one or many genres of the book
+- The `categories` field value should be an [array](https://www.mongodb.com/docs/manual/tutorial/query-arrays/) of strings representing one or many categories of the book
 - The `ebook` field value should be a boolean representing whether the book is an ebook version of the book or not
 
 Then, list all documents in the `books` collection and make sure that the inserted documents have the correct information. You'll notice that each document has an automatically generated `_id` field which act as a primary key. These values are [ObjectId](https://www.mongodb.com/docs/manual/reference/method/ObjectId/) objects, such as `ObjectId("507f1f77bcf86cd799439011")`.
@@ -37,7 +37,7 @@ Then, list all documents in the `books` collection and make sure that the insert
 
 Insert the following documents simultaneously using the `insertMany` method:
 
-| title                                               | author                      | year | genres                                                   | copies | ebook |
+| title                                               | author                      | year | categories                                                   | copies | ebook |
 | --------------------------------------------------- | --------------------------- | ---- | -------------------------------------------------------- | ------ | ----- |
 | "War and Peace"                                     | "Leo Tolstoy"               | 1869 | "Historical Fiction", "Classic", "Philosophical Fiction" | 84     | true  |
 | "The Lord of the Rings: The Fellowship of the Ring" | "John Ronald Reuel Tolkien" | 1954 | "Fantasy", "Adventure", "Epic"                           | 0      | false |
@@ -55,7 +55,7 @@ Read the [Query Documents](https://www.mongodb.com/docs/manual/tutorial/query-do
 
 - [Comparison query operators](https://www.geeksforgeeks.org/mongodb/mongodb-comparison-query-operators/) are used to _implement comparisons_, such as "greater than" or "less than" (similar as, e.g. `>` and `<` in SQL)
 - [Logical query operators](https://www.geeksforgeeks.org/mongodb/mongodb-logical-query-operators/) are used to _combine conditions_, such as "condition OR other condition" (similar as, e.g. `OR` and `AND` in SQL)
-- [Array field query operations](https://www.mongodb.com/docs/manual/tutorial/query-arrays/) are used to _query array fields_, such as the `genres` field in the `books` collection
+- [Array field query operations](https://www.mongodb.com/docs/manual/tutorial/query-arrays/) are used to _query array fields_, such as the `categories` field in the `books` collection
 
 Finally, implement and execute the following queries in the MongoDB Shell:
 
@@ -135,7 +135,7 @@ With the first approach, we could represent the author as an object with the req
   "_id": "6784c8cdd2cb986c92dbd4ab",
   "title": "The Hobbit",
   "year": 1937,
-  "genres": ["Fantasy", "Classic"],
+  "categories": ["Fantasy", "Classic"],
   "copies": 17,
   "ebook": true,
   "author": {
@@ -186,7 +186,7 @@ erDiagram
         int year
         int copies
         boolean ebook
-        string[] genres
+        string[] categories
     }
 ```
 
@@ -201,7 +201,7 @@ Let's consider how we could implement the relationship between the `authors` and
 
 Now, in the `books` collection, the `author_id` field can be an `ObjectId` object referencing the corresponding document's `_id` field in the `authors` collection. For example:
 
-| \_id                                 | title        | author_id                            | year | genres               | copies | ebook |
+| \_id                                 | title        | author_id                            | year | categories               | copies | ebook |
 | ------------------------------------ | ------------ | ------------------------------------ | ---- | -------------------- | ------ | ----- |
 | ObjectId("6784c8cdd2cb986c92dbd4ab") | "The Hobbit" | ObjectId("507f1f77bcf86cd799439011") | 1937 | "Fantasy", "Classic" | 17     | true  |
 
@@ -212,7 +212,7 @@ Here's the same document in the JSON format:
   "_id": "6784c8cdd2cb986c92dbd4ab",
   "title": "The Hobbit",
   "year": 1937,
-  "genres": ["Fantasy", "Classic"],
+  "categories": ["Fantasy", "Classic"],
   "copies": 17,
   "ebook": true,
   "author_id": "507f1f77bcf86cd799439011"

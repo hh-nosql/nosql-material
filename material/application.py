@@ -14,7 +14,7 @@ def add_book():
     print("Provide the book's information")
     title = input("Title:")
     year = input("Year:")
-    genres = input("Genres (comma separated):")
+    categories = input("Categories (comma separated):")
     copies = input("Number of copies:")
     ebook = input("Is ebook?:")
     author = input("Author ID:")

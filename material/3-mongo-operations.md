@@ -65,7 +65,7 @@ Finally, implement and execute the following queries in the MongoDB Shell:
 4. Find the books written by the author "Leo Tolstoy" before the year 1890. Sort the books in descending order by the publishing year
 5. Find the books written by either the author "Jane Austen" or "Aldous Huxley". Sort the books in ascending order by the author's name and descending order by the publishing year
 6. Find the books that are published after the year 1950 and before the year 2020
-7. Find the books that have either the "Thriller" or the "Drama" genre
+7. Find the books that have either the "Thriller" or the "Drama" category
 
 > [!IMPORTANT]  
 > Exercise 3 👨‍💻: Save the mentioned seven queries to the submission file.
@@ -80,8 +80,8 @@ Read the [Update Documents](https://www.mongodb.com/docs/manual/tutorial/update-
 1. Change the publishing year of the book "The Hobbit" to 1937 and the ebook status to true
 2. Set the number of copies as zero for all books written by the author "John Ronald Reuel Tolkien"
 3. Increase the number of copies of books published after the year 1920 by two, _without reading the current values_. 💡 Hint: [$inc](https://www.mongodb.com/docs/manual/reference/operator/update/inc/) operator
-4. Add the genre "American literature" for all books written by the author "Colleen Hoover", _without reading the current value_. 💡 Hint: [$push](https://www.mongodb.com/docs/manual/reference/operator/update/push/#mongodb-update-up.-push) operator
-5. Remove the genre "Non-fiction" from the book "Island", _without reading the current value_. 💡 Hint: [$pull](https://www.mongodb.com/docs/manual/reference/operator/update/pull/) operator
+4. Add the category "American literature" for all books written by the author "Colleen Hoover", _without reading the current value_. 💡 Hint: [$push](https://www.mongodb.com/docs/manual/reference/operator/update/push/#mongodb-update-up.-push) operator
+5. Remove the category "Non-fiction" from the book "Island", _without reading the current value_. 💡 Hint: [$pull](https://www.mongodb.com/docs/manual/reference/operator/update/pull/) operator
 
 > [!IMPORTANT]  
 > Exercise 4 👨‍💻: Save the mentioned five queries to the submission file.

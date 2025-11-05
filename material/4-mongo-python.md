@@ -1,6 +1,6 @@
 # MongoDB with Python
 
-In the fourth section of the course, we learn how to use MongoDB with the Python programming language. During this section, you will learn how to build a database application using Python and the PyMongo package.
+In the fourth part of the course, we learn how to use MongoDB with the Python programming language. During this part, you will learn how to build a database application using Python and the PyMongo package.
 
 ## PyMongo
 
@@ -45,7 +45,7 @@ db = client["library"]
 > [!TIP]  
 > If your want to connect to your cluster in the MongoDB Atlas instead, go trough the [Connect to MongoDB](https://www.mongodb.com/docs/languages/python/pymongo-driver/current/connect/#atlas) guide. We want to keep the MongoDB Atlas connection string a secret to avoid unwanted people accessing our database. To achieve this, we shouldn't store the connection string in the code, instead we should use an [environment variable](https://www.geeksforgeeks.org/using-python-environment-variables-with-python-dotenv/) for the connection string.
 
-3️⃣ Print all the documents in one of the collections you inserted documents for in the previous section using the [find](https://www.w3schools.com/python/python_mongodb_find.asp) method. You can iterate the return value of the method using a `for` loop. The iterated items are [dictionaries](https://www.w3schools.com/python/python_dictionaries.asp) in which the keys match the document's fields:
+3️⃣ Print all the documents in one of the collections you inserted documents for in the previous part using the [find](https://www.w3schools.com/python/python_mongodb_find.asp) method. You can iterate the return value of the method using a `for` loop. The iterated items are [dictionaries](https://www.w3schools.com/python/python_dictionaries.asp) in which the keys match the document's fields:
 
 ```python
 from pymongo import MongoClient
@@ -163,7 +163,7 @@ You are done, good job! 🎉 The last thing to do is to submit the project. Ther
 > [!IMPORTANT]  
 > Exercise 3 👨‍💻: Submit your project work to the "MongoDB with Python" Moodle submission by following the instructions above.
 
-Once you have done all the submissions in Moodle (from this section and the previous sections), your work will be reviewed after the final deadline. After the review, if there are no problems with your work, you'll get the credits. Otherwise, you'll be asked to make changes and resubmit your work.
+Once you have done all the submissions in Moodle (from this part and the previous parts), your work will be reviewed after the final deadline. After the review, if there are no problems with your work, you'll get the credits. Otherwise, you'll be asked to make changes and resubmit your work.
 
 <!-- TODO -->
 > [!WARNING]  

@@ -1,16 +1,16 @@
 # Database operations and data model in MongoDB
 
-In the third section of the course, we learn the basic database operations in the MongoDB database management system. We will also cover the core concepts of the MongoDB data model. During this section, you will learn how to perform CRUD and aggregation operations in the MongoDB database and how to use embedded documents and document references in the MongoDB data model. You will also design and set up a database for your project.
+In the third part of the course, we learn the basic database operations in the MongoDB database management system. We will also cover the core concepts of the MongoDB data model. During this part, you will learn how to perform CRUD and aggregation operations in the MongoDB database and how to use embedded documents and document references in the MongoDB data model. You will also design and set up a database for your project.
 
 ## CRUD operations
 
-The [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) operations (create, read, update, delete) are the most common database operations in any database management system. Next, let's practice their usage in MongoDB. Before starting the exercises, open the MongoDB Compass application we used during the previous section and open the `library` database in the MongoDB Shell.
+The [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) operations (create, read, update, delete) are the most common database operations in any database management system. Next, let's practice their usage in MongoDB. Before starting the exercises, open the MongoDB Compass application we used during the previous part and open the `library` database in the MongoDB Shell.
 
 > [!WARNING]  
 > Make sure that the MongoDB Shell is using the `library` database by executing the `use library` command. The command input line should start with "library" (name of the used database).
 
 > [!IMPORTANT]  
-> Exercise 1 👨‍💻: Create a new Word document for the exercises in this section. Add the information mentioned in the exercises to the file for a later submission. You can include the database queries as text or as [screenshots](https://www.take-a-screenshot.org/) of the MongoDB Shell (no need to include the query result in the screenshot). Once you are done with the exercises in this section, submit the file to the "Database operations in MongoDB" Moodle submission in PDF format.
+> Exercise 1 👨‍💻: Create a new Word document for the exercises in this part. Add the information mentioned in the exercises to the file for a later submission. You can include the database queries as text or as [screenshots](https://www.take-a-screenshot.org/) of the MongoDB Shell (no need to include the query result in the screenshot). Once you are done with the exercises in this part, submit the file to the "Database operations in MongoDB" Moodle submission in PDF format.
 
 ### Inserting documents
 
@@ -257,4 +257,4 @@ Come up with your own database or use the ideas above. Feel free to make any mod
 > [!IMPORTANT]  
 > Exercise 9 👨‍💻: Create _a new database_ for your project and add the collections in the MongoDB Compass. Then, insert a few documents into each collection as test data using the MongoDB Shell. Take a screenshot of the database view in the MongoDB Compass (visible after clicking the database name on the connections list) and add it to the submission file. The screenshot should contain the database's name and the list of the database's collections. Revisit [Manage Databases in Compass](https://www.mongodb.com/docs/compass/current/databases/), [Manage Collections in Compass](https://www.mongodb.com/docs/compass/current/collections/), and [Insert Documents](https://www.mongodb.com/docs/manual/tutorial/insert-documents/) guides if you have trouble.
 
-⏭️ [Move on to the final section](./4-mongo-python.md)
+⏭️ [Move on to the final part](./4-mongo-python.md)

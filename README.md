@@ -9,12 +9,12 @@ During this course, we will learn the principles of NoSQL database management sy
 
 The scope of the course is 2 credits. The prerequisites for the course are the [Data Management and Databases](https://opinto-opas.haaga-helia.fi/course_unit/SOF001AS2AE) (SOF001AS2AE) and [Python Programming](https://opinto-opas.haaga-helia.fi/course_unit/SOF001AS2AE) (SOF004AS2AE) courses or similar knowledge and skills. The course has no lessons, instead, the course is completed by studying the material and completing the compulsory exercises independently. On top of the exercises, the acquired knowledge and skills are applied in practice by developing a simple programming project with Python.
 
-The course assessment is either pass or fail. A passing completion of the course requires completing _all the exercises_ and _implementing a project of an appropriate scope of complexity_. The four sections of the course describe the requirements of completing each section in more detail. You can complete the course at your own pace and request the credits once the requirements are met.
+The course assessment is either pass or fail. A passing completion of the course requires completing _all the exercises_ and _implementing a project of an appropriate scope of complexity_. The four parts of the course describe the requirements of completing each part in more detail. You can complete the course at your own pace and request the credits once the requirements are met.
 
 ## ⚠️ Deadlines
 
 <!-- TODO -->
-_To confirm the course participation, pass the "Introduction to NoSQL database management systems" Moodle exam before Thursday 30.10. at 23:59_ (details in the first, [Introduction to NoSQL database management systems](./material/1-nosql-introduction.md), section). Otherwise, individual sections of the course don't have deadlines, but instead, there's a single _final deadline for the remaining coursework on Sunday 14.12. at 23:59_.
+_To confirm the course participation, pass the "Introduction to NoSQL database management systems" Moodle exam before Thursday 30.10. at 23:59_ (details in the first, [Introduction to NoSQL database management systems](./material/1-nosql-introduction.md), part). Otherwise, individual parts of the course don't have deadlines, but instead, there's a single _final deadline for the remaining coursework on Sunday 14.12. at 23:59_.
 
 ## 🧠 Using generative AI tools
 
@@ -37,7 +37,7 @@ After completing this course, you know how to...
 
 ## 📖 Contents
 
-The course advances through four sections in the following order. Complete the previous section before moving on to the next section.
+The course advances through four parts in the following order. Complete the previous part before moving on to the next part.
 
 1. [Introduction to NoSQL database management systems](./material/1-nosql-introduction.md)
 2. [Introduction to MongoDB database management system](./material/2-mongo-introduction.md)

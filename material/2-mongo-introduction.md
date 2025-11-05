@@ -2,7 +2,7 @@
 
 > _"MongoDB is a document database with the scalability and flexibility that you want with the querying and indexing that you need."_
 
-In the second section of the course, we will learn the principles of the MongoDB database management system, which is one of the most widely adopted NoSQL database management systems. During this section, you will learn about the principles of the data model in the MongoDB database management system, how to install the MongoDB database management system and the MongoDB Compass tool, and how to create a database in the MongoDB database management system.
+In the second part of the course, we will learn the principles of the MongoDB database management system, which is one of the most widely adopted NoSQL database management systems. During this part, you will learn about the principles of the data model in the MongoDB database management system, how to install the MongoDB database management system and the MongoDB Compass tool, and how to create a database in the MongoDB database management system.
 
 The MongoDB database management system is a widely adopted NoSQL database management system. Based on the [State of Database Survey](https://stateofdb.com/) in 2023, MongoDB was among the three most well-known and widely used database management systems, along with PostgreSQL and MySQL. MongoDB has many use cases, web development being one of them. It is the database technology in the popular [MERN](https://www.mongodb.com/resources/languages/mern-stack) technology stack, which is widely used to develop web applications.
 
@@ -12,7 +12,7 @@ MongoDB is a document-oriented database. Familiarize yourself with document-orie
 - [Documents](https://www.mongodb.com/docs/manual/core/document/)
 - [Data Modeling](https://www.mongodb.com/docs/manual/data-modeling/)
 
-Once you have read through the articles, test your knowledge by completing the "Introduction to MongoDB database management system" Moodle exam. After passing the exam, move on to the next topic in this section.
+Once you have read through the articles, test your knowledge by completing the "Introduction to MongoDB database management system" Moodle exam. After passing the exam, move on to the next topic in this part.
 
 > [!IMPORTANT]  
 > Exercise 1 👨‍💻: Read the four articles mentioned above. Then, take and pass the "Introduction to MongoDB database management system" multiple-choice Moodle exam related to the principles of the MongoDB database management system. You have 45 minutes to complete the exam, and passing grade requires at least 9/13 points. You can retake the exam two times in case you fail.
@@ -55,4 +55,4 @@ MongoDB Compass should already be installed along with the MongoDB database mana
 > [!TIP]  
 > You can use the `library` database in your MongoDB Atlas cluster in all upcoming exercises. You can also use the cluster for your project's database.
 
-⏭️ [Move on to the next section](./3-mongo-operations.md)
+⏭️ [Move on to the next part](./3-mongo-operations.md)

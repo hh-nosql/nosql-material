@@ -59,6 +59,15 @@ You are about to dive into to the exciting world outside relational databases...
 
 ---
 
+## Brief history of NoSQL databases
+
+- In the early 2000s, as the internet expanded, major companies such as Google and Amazon began to face unprecedented challenges related to data volume, velocity, and variety
+- Traditional **relational database management systems** (RDBMSs) struggled to meet these demands, particularly in terms of scalability, flexibility, and performance in distributed environments
+- To address these limitations, a new class of highly scalable systems, known as **NoSQL DBMSs**, began to emerge
+- Since the 2010s, the NoSQL ecosystem has grown rapidly, with many NoSQL databases establishing themselves among the most widely adopted DBMSs in the world
+
+---
+
 ## What are NoSQL DBMSs?
 
 > _"When people use the term "NoSQL database", they typically use it to refer to any non-relational database. Some say the term "NoSQL" stands for "non-SQL" while others say it stands for "not only SQL"."_

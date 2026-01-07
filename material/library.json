@@ -3,7 +3,7 @@
     "title": "Anna Karenina",
     "author": "Leo Tolstoy",
     "year": 1877,
-    "categories": ["Romance", "Russian Literature", "Classic", "Drama"],
+    "genres": ["Romance", "Russian Literature", "Classic", "Drama"],
     "copies": 29,
     "ebook": false
   },
@@ -11,7 +11,7 @@
     "title": "The Death of Ivan Ilyich",
     "author": "Leo Tolstoy",
     "year": 1886,
-    "categories": ["Philosophy", "Psychology", "Russian Literature", "Classic"],
+    "genres": ["Philosophy", "Psychology", "Russian Literature", "Classic"],
     "copies": 0,
     "ebook": true
   },
@@ -19,7 +19,7 @@
     "title": "The Night Circus",
     "author": "Erin Morgenstern",
     "year": 2011,
-    "categories": [
+    "genres": [
       "Fantasy",
       "Romance",
       "Historical Fiction",
@@ -32,7 +32,7 @@
     "title": "The Lord of the Rings: The Two Towers",
     "author": "John Ronald Reuel Tolkien",
     "year": 1954,
-    "categories": ["Fantasy", "Adventure", "Epic", "High Fantasy"],
+    "genres": ["Fantasy", "Adventure", "Epic", "High Fantasy"],
     "copies": 0,
     "ebook": false
   },
@@ -40,7 +40,7 @@
     "title": "The Lord of the Rings: The Return of the King",
     "author": "John Ronald Reuel Tolkien",
     "year": 1955,
-    "categories": ["Fantasy", "Adventure", "Epic", "High Fantasy"],
+    "genres": ["Fantasy", "Adventure", "Epic", "High Fantasy"],
     "copies": 18,
     "ebook": true
   },
@@ -48,7 +48,7 @@
     "title": "Point Counter Point",
     "author": "Aldous Huxley",
     "year": 1928,
-    "categories": ["Philosophy", "Satire", "Modernist Literature"],
+    "genres": ["Philosophy", "Satire", "Modernist Literature"],
     "copies": 0,
     "ebook": false
   },
@@ -56,7 +56,7 @@
     "title": "The Doors of Perception",
     "author": "Aldous Huxley",
     "year": 1954,
-    "categories": ["Philosophy", "Psychology", "Memoir", "Non-fiction"],
+    "genres": ["Philosophy", "Psychology", "Memoir", "Non-fiction"],
     "copies": 52,
     "ebook": false
   },
@@ -64,7 +64,7 @@
     "title": "Sense and Sensibility",
     "author": "Jane Austen",
     "year": 1811,
-    "categories": ["Romance", "Classic", "British Literature", "Drama"],
+    "genres": ["Romance", "Classic", "British Literature", "Drama"],
     "copies": 0,
     "ebook": true
   },
@@ -72,7 +72,7 @@
     "title": "Emma",
     "author": "Jane Austen",
     "year": 1815,
-    "categories": ["Romance", "Classic", "British Literature", "Comedy"],
+    "genres": ["Romance", "Classic", "British Literature", "Comedy"],
     "copies": 8,
     "ebook": false
   },
@@ -80,7 +80,7 @@
     "title": "Where the Crawdads Sing",
     "author": "Delia Owens",
     "year": 2018,
-    "categories": [
+    "genres": [
       "Mystery",
       "Contemporary Fiction",
       "Romance",
@@ -93,7 +93,7 @@
     "title": "Mansfield Park",
     "author": "Jane Austen",
     "year": 1814,
-    "categories": ["Romance", "Classic", "British Literature", "Drama"],
+    "genres": ["Romance", "Classic", "British Literature", "Drama"],
     "copies": 14,
     "ebook": true
   },
@@ -101,7 +101,7 @@
     "title": "To Kill a Mockingbird",
     "author": "Harper Lee",
     "year": 1960,
-    "categories": ["Classic", "Historical Fiction", "Drama", "Social Issues"],
+    "genres": ["Classic", "Historical Fiction", "Drama", "Social Issues"],
     "copies": 12,
     "ebook": false
   },
@@ -109,7 +109,7 @@
     "title": "Moby-Dick",
     "author": "Herman Melville",
     "year": 1851,
-    "categories": ["Classic", "American Literature", "Sea Stories"],
+    "genres": ["Classic", "American Literature", "Sea Stories"],
     "copies": 10,
     "ebook": false
   },
@@ -117,7 +117,7 @@
     "title": "It Ends with Us",
     "author": "Colleen Hoover",
     "year": 2016,
-    "categories": ["Romance", "Contemporary Fiction", "Drama", "Social Issues"],
+    "genres": ["Romance", "Contemporary Fiction", "Drama", "Social Issues"],
     "copies": 22,
     "ebook": true
   },
@@ -125,7 +125,7 @@
     "title": "Verity",
     "author": "Colleen Hoover",
     "year": 2018,
-    "categories": [
+    "genres": [
       "Thriller",
       "Romantic Suspense",
       "Mystery",
@@ -138,7 +138,7 @@
     "title": "Ugly Love",
     "author": "Colleen Hoover",
     "year": 2014,
-    "categories": ["Romance", "Contemporary Fiction", "Drama"],
+    "genres": ["Romance", "Contemporary Fiction", "Drama"],
     "copies": 18,
     "ebook": false
   },
@@ -146,7 +146,7 @@
     "title": "Island",
     "author": "Aldous Huxley",
     "year": 1962,
-    "categories": [
+    "genres": [
       "Utopian Fiction",
       "Philosophy",
       "Classic Literature",
@@ -160,7 +160,7 @@
     "title": "The Echoes of Evermore",
     "author": "Lila Hart",
     "year": 2023,
-    "categories": ["Fantasy", "Adventure", "Romance"],
+    "genres": ["Fantasy", "Adventure", "Romance"],
     "copies": 0,
     "ebook": false
   },
@@ -168,7 +168,7 @@
     "title": "The Shadow of Starlight",
     "author": "Lila Hart",
     "year": 2022,
-    "categories": ["Fantasy", "Dark Fantasy", "Mystery"],
+    "genres": ["Fantasy", "Dark Fantasy", "Mystery"],
     "copies": 9,
     "ebook": true
   },
@@ -176,7 +176,7 @@
     "title": "Whispers of the Wildwood",
     "author": "Lila Hart",
     "year": 2024,
-    "categories": ["Fantasy", "Adventure", "Mythology"],
+    "genres": ["Fantasy", "Adventure", "Mythology"],
     "copies": 20,
     "ebook": false
   },
@@ -184,7 +184,7 @@
     "title": "The Dawn of Serenity",
     "author": "Leo Tolstoy",
     "year": 1899,
-    "categories": ["Philosophy", "Historical Fiction", "Drama"],
+    "genres": ["Philosophy", "Historical Fiction", "Drama"],
     "copies": 0,
     "ebook": true
   },
@@ -192,7 +192,7 @@
     "title": "Hadji Murat",
     "author": "Leo Tolstoy",
     "year": 1912,
-    "categories": [
+    "genres": [
       "Historical Fiction",
       "Russian Literature",
       "Classic",
@@ -205,7 +205,7 @@
     "title": "Secrets of the Southern Wild",
     "author": "Delia Owens",
     "year": 2024,
-    "categories": ["Mystery", "Historical Fiction", "Drama", "Thriller"],
+    "genres": ["Mystery", "Historical Fiction", "Drama", "Thriller"],
     "copies": 9,
     "ebook": true
   }

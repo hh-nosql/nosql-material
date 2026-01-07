@@ -19,7 +19,7 @@ The [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) operat
 
 Read the [Insert Documents](https://www.mongodb.com/docs/manual/tutorial/insert-documents/) guide. Then, insert a single document to the `books` collection with the following details using the `insertOne` method:
 
-| title                 | author        | year | categories                          | copies | ebook |
+| title                 | author        | year | genres                          | copies | ebook |
 | --------------------- | ------------- | ---- | ------------------------------- | ------ | ----- |
 | "Pride and Prejudice" | "Jane Austen" | 1813 | "Romance", "Classic", "Fiction" | 3      | false |
 
@@ -27,7 +27,7 @@ The data should be in the following format:
 
 - The `title` and `author` field values should be strings
 - The `copies` and `year` field values should be integers
-- The `categories` field value should be an [array](https://www.mongodb.com/docs/manual/tutorial/query-arrays/) of strings representing one or many categories of the book
+- The `genres` field value should be an [array](https://www.mongodb.com/docs/manual/tutorial/query-arrays/) of strings representing one or many genres of the book
 - The `ebook` field value should be a boolean representing whether the book is an ebook version of the book or not
 
 Then, list all documents in the `books` collection and make sure that the inserted documents have the correct information. You'll notice that each document has an automatically generated `_id` field which act as a primary key. These values are [ObjectId](https://www.mongodb.com/docs/manual/reference/method/ObjectId/) objects, such as `ObjectId("507f1f77bcf86cd799439011")`.
@@ -37,7 +37,7 @@ Then, list all documents in the `books` collection and make sure that the insert
 
 Insert the following documents simultaneously using the `insertMany` method:
 
-| title                                               | author                      | year | categories                                                   | copies | ebook |
+| title                                               | author                      | year | genres                                                   | copies | ebook |
 | --------------------------------------------------- | --------------------------- | ---- | -------------------------------------------------------- | ------ | ----- |
 | "War and Peace"                                     | "Leo Tolstoy"               | 1869 | "Historical Fiction", "Classic", "Philosophical Fiction" | 84     | true  |
 | "The Lord of the Rings: The Fellowship of the Ring" | "John Ronald Reuel Tolkien" | 1954 | "Fantasy", "Adventure", "Epic"                           | 0      | false |
@@ -55,7 +55,7 @@ Read the [Query Documents](https://www.mongodb.com/docs/manual/tutorial/query-do
 
 - [Comparison query operators](https://www.geeksforgeeks.org/mongodb/mongodb-comparison-query-operators/) are used to _implement comparisons_, such as "greater than" or "less than" (similar as, e.g. `>` and `<` in SQL)
 - [Logical query operators](https://www.geeksforgeeks.org/mongodb/mongodb-logical-query-operators/) are used to _combine conditions_, such as "condition OR other condition" (similar as, e.g. `OR` and `AND` in SQL)
-- [Array field query operations](https://www.mongodb.com/docs/manual/tutorial/query-arrays/) are used to _query array fields_, such as the `categories` field in the `books` collection
+- [Array field query operations](https://www.mongodb.com/docs/manual/tutorial/query-arrays/) are used to _query array fields_, such as the `genres` field in the `books` collection
 
 Finally, implement and execute the following queries in the MongoDB Shell:
 
@@ -65,7 +65,7 @@ Finally, implement and execute the following queries in the MongoDB Shell:
 4. Find the books written by the author "Leo Tolstoy" before the year 1890. Sort the books in descending order by the publishing year
 5. Find the books written by either the author "Jane Austen" or "Aldous Huxley". Sort the books in ascending order by the author's name and descending order by the publishing year
 6. Find the books that are published after the year 1950 and before the year 2020
-7. Find the books that have either the "Thriller" or the "Drama" category
+7. Find the books that have either the "Thriller" or the "Drama" genre
 
 > [!IMPORTANT]  
 > Exercise 3 👨‍💻: Save the mentioned seven queries to the submission file.
@@ -80,8 +80,8 @@ Read the [Update Documents](https://www.mongodb.com/docs/manual/tutorial/update-
 1. Change the publishing year of the book "The Hobbit" to 1937 and the ebook status to true
 2. Set the number of copies as zero for all books written by the author "John Ronald Reuel Tolkien"
 3. Increase the number of copies of books published after the year 1920 by two, _without reading the current values_. 💡 Hint: [$inc](https://www.mongodb.com/docs/manual/reference/operator/update/inc/) operator
-4. Add the category "American literature" for all books written by the author "Colleen Hoover", _without reading the current value_. 💡 Hint: [$push](https://www.mongodb.com/docs/manual/reference/operator/update/push/#mongodb-update-up.-push) operator
-5. Remove the category "Non-fiction" from the book "Island", _without reading the current value_. 💡 Hint: [$pull](https://www.mongodb.com/docs/manual/reference/operator/update/pull/) operator
+4. Add the genre "American literature" for all books written by the author "Colleen Hoover", _without reading the current value_. 💡 Hint: [$push](https://www.mongodb.com/docs/manual/reference/operator/update/push/#mongodb-update-up.-push) operator
+5. Remove the genre "Non-fiction" from the book "Island", _without reading the current value_. 💡 Hint: [$pull](https://www.mongodb.com/docs/manual/reference/operator/update/pull/) operator
 
 > [!IMPORTANT]  
 > Exercise 4 👨‍💻: Save the mentioned five queries to the submission file.
@@ -113,7 +113,7 @@ Finally, implement and execute the following aggregations in the MongoDB Shell:
 2. Display the total number of book copies
 3. Display the number of books by each author
 4. Display the number of book copies by each author
-5. Display the total number of book copies of books that are not ebooks and have the "Romance" category. 💡 Hint: pay attention to the order of the aggregation operations (that is, the order of the aggregation operation objects in the argument array)
+5. Display the total number of book copies of books that are not ebooks and have the "Romance" genre. 💡 Hint: pay attention to the order of the aggregation operations (that is, the order of the aggregation operation objects in the argument array)
 6. ⭐ Bonus: Display the publishing year of each author's first and latest book. 💡 Hint: find suitable [aggregation accumulators](https://www.mongodb.com/docs/manual/reference/mql/accumulators/)
 
 > [!IMPORTANT]  
@@ -135,7 +135,7 @@ With the first approach, we could represent the author as an object with the req
   "_id": "6784c8cdd2cb986c92dbd4ab",
   "title": "The Hobbit",
   "year": 1937,
-  "categories": ["Fantasy", "Classic"],
+  "genres": ["Fantasy", "Classic"],
   "copies": 17,
   "ebook": true,
   "author": {
@@ -186,7 +186,7 @@ erDiagram
         int year
         int copies
         boolean ebook
-        string[] categories
+        string[] genres
     }
 ```
 
@@ -201,7 +201,7 @@ Let's consider how we could implement the relationship between the `authors` and
 
 Now, in the `books` collection, the `author_id` field can be an `ObjectId` object referencing the corresponding document's `_id` field in the `authors` collection. For example:
 
-| \_id                                 | title        | author_id                            | year | categories               | copies | ebook |
+| \_id                                 | title        | author_id                            | year | genres               | copies | ebook |
 | ------------------------------------ | ------------ | ------------------------------------ | ---- | -------------------- | ------ | ----- |
 | ObjectId("6784c8cdd2cb986c92dbd4ab") | "The Hobbit" | ObjectId("507f1f77bcf86cd799439011") | 1937 | "Fantasy", "Classic" | 17     | true  |
 
@@ -212,7 +212,7 @@ Here's the same document in the JSON format:
   "_id": "6784c8cdd2cb986c92dbd4ab",
   "title": "The Hobbit",
   "year": 1937,
-  "categories": ["Fantasy", "Classic"],
+  "genres": ["Fantasy", "Classic"],
   "copies": 17,
   "ebook": true,
   "author_id": "507f1f77bcf86cd799439011"
@@ -256,5 +256,51 @@ Come up with your own database or use the ideas above. Feel free to make any mod
 
 > [!IMPORTANT]  
 > Exercise 9 👨‍💻: Create _a new database_ for your project and add the collections in the MongoDB Compass. Then, insert a few documents into each collection as test data using the MongoDB Shell. Take a screenshot of the database view in the MongoDB Compass (visible after clicking the database name on the connections list) and add it to the submission file. The screenshot should contain the database's name and the list of the database's collections. Revisit [Manage Databases in Compass](https://www.mongodb.com/docs/compass/current/databases/), [Manage Collections in Compass](https://www.mongodb.com/docs/compass/current/collections/), and [Insert Documents](https://www.mongodb.com/docs/manual/tutorial/insert-documents/) guides if you have trouble.
+
+## ⭐ Bonus: Data validation with JSON Schema
+
+Even if the structure of the collection's document is flexible, we usually still want to enforce some rules for the documents. For example, in the `books` collection, the `copies` attribute should only contain integer values greater than `0` and `genres` attribute an array of non-empty strings.
+
+MongoDB supports document validation with the widely adopted [JSON Schema](https://json-schema.org/) validation standard. JSON Schema is a standard for describing the structure, rules, and constraints of JSON data, e.g. a document. For example, the following JSON Schema could be used to validate a `book` document:
+
+```json
+{
+  "bsonType": "object",
+  "required": ["title", "author", "year", "genres", "copies", "ebook"],
+  "properties": {
+    "title": {
+      "bsonType": "string",
+      "minLength": 1
+    },
+    "author": {
+      "bsonType": "string",
+      "minLength": 1
+    },
+    "year": {
+      "bsonType": "int",
+      "minimum": 0
+    },
+    "genres": {
+      "bsonType": "array",
+      "items": {
+        "bsonType": "string"
+      }
+    },
+    "copies": {
+      "bsonType": "int",
+      "minimum": 0
+    },
+    "ebook": {
+      "bsonType": "boolean"
+    }
+  }
+}
+```
+
+Every time a document is inserted or updated in the collection with JSON Schema validation enabled, the document's structure must match the structure defined by the schema.
+
+You can read more about how to enable JSON Schema validation for a collection by following the [MongoDB Schema Validation: A Practical Guide with Examples](https://www.datacamp.com/tutorial/mongodb-schema-validation) guide.
+
+---
 
 ⏭️ [Move on to the final part](./4-mongo-python.md)

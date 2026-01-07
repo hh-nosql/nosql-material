@@ -59,4 +59,6 @@ MongoDB Compass should already be installed along with the MongoDB database mana
 > [!TIP]  
 > You can use the `library` database in your MongoDB Atlas cluster in all upcoming exercises. You can also use the cluster for your project's database.
 
+---
+
 ⏭️ [Move on to the next part](./3-mongo-operations.md)

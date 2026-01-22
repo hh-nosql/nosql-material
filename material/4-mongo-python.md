@@ -167,4 +167,4 @@ Once you have done all the submissions in Moodle (from this part and the previou
 
 <!-- TODO -->
 > [!WARNING]  
-> The final deadline for the coursework is on Sunday 14.12. at 23:59. _Final deadline is strict_ and submissions made after it won't be reviewed and no credits will be granted.
+> The final deadline for the coursework is on Sunday 17.5. at 23:59. _Final deadline is strict_ and submissions made after it won't be reviewed and no credits will be granted.

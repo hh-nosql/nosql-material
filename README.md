@@ -14,7 +14,7 @@ The course assessment is either pass or fail. A passing completion of the course
 ## ⚠️ Deadlines
 
 <!-- TODO -->
-_To confirm the course participation, pass the "Introduction to NoSQL database management systems" Moodle exam before Thursday 30.10. at 23:59_ (details in the first, [Introduction to NoSQL database management systems](./material/1-nosql-introduction.md), part). Otherwise, individual parts of the course don't have deadlines, but instead, there's a single _final deadline for the remaining coursework on Sunday 14.12. at 23:59_.
+_To confirm the course participation, pass the "Introduction to NoSQL database management systems" Moodle exam before Friday 3.4. at 8:00_ (details in the first, [Introduction to NoSQL database management systems](./material/1-nosql-introduction.md), part). Otherwise, individual parts of the course don't have deadlines, but instead, there's a single _final deadline for the remaining coursework on Sunday 17.5. at 23:59_.
 
 ## 🧠 Using generative AI tools
 

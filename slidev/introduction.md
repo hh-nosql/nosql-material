@@ -52,8 +52,8 @@ You are about to dive into to the exciting world outside relational databases...
 
 <!-- TODO -->
 - The course schedule is very flexible, there are only **two deadlines**:
-  - Passing the Moodle exam of the first part **before Thursday 30.10. at 23:59**
-  - Finishing everything else **before Sunday 14.12. at 23:59.**
+  - Passing the Moodle exam of the first part **before Friday 3.4. at 8:00**
+  - Finishing everything else **before Sunday 17.5. at 23:59.**
 - The course assesment is either **pass or fail**. A passing grade requires passing the two Moodle exams and completing the other exercises in accordance with their requirements
 - If your submission has issues, the teacher will request changes and you have a chance to resubmit your work
 
@@ -76,11 +76,11 @@ You are about to dive into to the exciting world outside relational databases...
 - This means that the NoSQL DBMS's data model **is not based on relations and their relationships**
 - Instead there are multiple different ways to structure data depending on the NoSQL DBMS, such as JSON documents, key-value pairs and graphs
 - NoSQL DBMSs provide **solutions for a wide range of data requirements**. For instance, if we need extremely fast key-value operations without the overhead of managing complex relationships between data entities
-- Next, let's have a look at three different NoSQL DBMSs and what's their data model approach: **MongoDB**, **Redis** and **Neo4j**
+- Next, let's have a look at three different NoSQL DBMSs and what's their data model approach: **MongoDB**, **Redis** and **DynamoDB**
 
 ---
 
-## MongoDB — Document database, flexible, scalable
+## MongoDB — Document database
 
 - **MongoDB** is an example of **document-based** NoSQL DBMS
 - The data is stored in **collections** which contain JSON-like **documents**:
@@ -102,12 +102,12 @@ You are about to dive into to the exciting world outside relational databases...
 
 ---
 
-## MongoDB — Document database, flexible, scalable
+## MongoDB — Document database
 
 - Database operations are performed using the **MongoDB Query Language** (MQL), which has a very JavaScript-like syntax:
 
 ```js
-db.books.find({ "author": "Frank Herbert" })
+db.books.find({ "author": "Frank Herbert", "year": { "$gte": 1965 } })
 ```
 
 - The key befinits of MongoDB are its **flexibility** and **scalability**
@@ -117,7 +117,7 @@ db.books.find({ "author": "Frank Herbert" })
 
 ---
 
-## Redis — Key-value database, fast, scalable
+## Redis — Key-value database
 
 - **Redis** is an example of **key-value** NoSQL DBMS
 - The data is stored as **key-value pairs**, meaning that we can store and access any kind of string data using string keys, e.g. unique identifiers:
@@ -134,30 +134,24 @@ GET teacher:h02680
 
 ---
 
-## Neo4j — Graph database, relationships, efficient queries
+## DynamoDB — Key-value and document database
 
-- **Neo4j** is an example of a **graph-based** NoSQL DBMS
-- The data is stored as **nodes** wich have **relationships** with other nodes:
+- **DynamoDB** is an example of a **managed key-value and document** NoSQL DBMS in AWS
+- The data is stored in **tables** that contain **items** identified by a primary key
+- Database operations are performed using the **DynamoDB API**:
 
-```mermaid
-graph TD
-    A[Person: Cillian Murphy] -->|ACTED_IN| B[Movie: Inception]
-    G[Person: Leonardo DiCaprio] -->|ACTED_IN| B
-    H[Person: Christopher Nolan] -->|DIRECTED| B
-    
-    C[Movie: Interstellar] 
-    H -->|DIRECTED| C
-    I[Person: Matthew McConaughey] -->|ACTED_IN| C
+```json
+{
+  "TableName": "Orders",
+  "KeyConditionExpression": "UserId = :uid",
+  "ExpressionAttributeValues": {
+    ":uid": { "S": "user_123" }
+  },
+  "ProjectionExpression": "OrderId, Items"
+}
 ```
 
-- Database operations are performed using the **Cypher** query language:
-
-```
-MATCH (a:Person)-[:ACTED_IN]->(m:Movie {title: "Inception"})
-RETURN a.name AS Actor;
-```
-
-- Neo4j is a good choice for all use-cases where the **data can be modelled as a graph**, e.g. social networks.
+- DynamoDB's queries are primarily designed around **fast key-based access**, in contrast to MongoDB, which supports flexible and complex queries across many fields
 
 ---
 
@@ -168,7 +162,8 @@ RETURN a.name AS Actor;
 - As we saw from these examples alone, the **NoSQL DBMS family offers a wide range of different kind of tools** suitable for different kind of use-cases
 - For example, Redis offers a way better performance for key-value based operations than PostgreSQL or other RDBMSs
 - MongoDB on the other hand offers database schema flexibility and built-in scalability
-- So, studying NoSQL DBMSs offers us more tools to solve different kind of problems
+- Often, system's architecture **consists of more than one DBMS**, for example MongoDB as the primary database and Redis as the cache-layer
+- Studying NoSQL DBMSs offers us more tools to solve different kind of problems
 
 ---
 

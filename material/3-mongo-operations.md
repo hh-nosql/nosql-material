@@ -12,6 +12,9 @@ The [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) operat
 > [!IMPORTANT]  
 > Exercise 1 👨‍💻: Create a new Word document for the exercises in this part. Add the information mentioned in the exercises to the file for a later submission. You can include the database queries as text or as [screenshots](https://www.take-a-screenshot.org/) of the MongoDB Shell (no need to include the query result in the screenshot). Once you are done with the exercises in this part, submit the file to the "Database operations in MongoDB" Moodle submission in PDF format.
 
+> [!CAUTION]
+> Using generative AI tools (e.g., ChatGPT or Copilot) to generate solutions directly is strictly forbidden and considered plagiarism. Misusing these tools won't help you learn, and you won't get anything out of the course.
+
 ### Inserting documents
 
 > [!WARNING]  
@@ -25,10 +28,10 @@ Read the [Insert Documents](https://www.mongodb.com/docs/manual/tutorial/insert-
 
 The data should be in the following format:
 
-- The `title` and `author` field values should be strings
-- The `copies` and `year` field values should be integers
-- The `genres` field value should be an [array](https://www.mongodb.com/docs/manual/tutorial/query-arrays/) of strings representing one or many genres of the book
-- The `ebook` field value should be a boolean representing whether the book is an ebook version of the book or not
+- The `title` and `author` field values should be _strings_.
+- The `copies` and `year` field values should be _integers_.
+- The `genres` field value should be an [array](https://www.mongodb.com/docs/manual/tutorial/query-arrays/) of _strings_ representing one or many genres of the book.
+- The `ebook` field value should be a _boolean_ representing whether the book is an ebook version of the book or not.
 
 Then, list all documents in the `books` collection and make sure that the inserted documents have the correct information. You'll notice that each document has an automatically generated `_id` field which act as a primary key. These values are [ObjectId](https://www.mongodb.com/docs/manual/reference/method/ObjectId/) objects, such as `ObjectId("507f1f77bcf86cd799439011")`.
 
@@ -53,19 +56,19 @@ Then, list all the documents in the `books` collection.
 
 Read the [Query Documents](https://www.mongodb.com/docs/manual/tutorial/query-documents/) and the [Sorting documents](https://www.geeksforgeeks.org/mongodb/mongodb-sort-method/) guides. Then, familiarize yourself with the following query concepts:
 
-- [Comparison query operators](https://www.geeksforgeeks.org/mongodb/mongodb-comparison-query-operators/) are used to _implement comparisons_, such as "greater than" or "less than" (similar as, e.g. `>` and `<` in SQL)
-- [Logical query operators](https://www.geeksforgeeks.org/mongodb/mongodb-logical-query-operators/) are used to _combine conditions_, such as "condition OR other condition" (similar as, e.g. `OR` and `AND` in SQL)
-- [Array field query operations](https://www.mongodb.com/docs/manual/tutorial/query-arrays/) are used to _query array fields_, such as the `genres` field in the `books` collection
+- [Comparison query operators](https://www.geeksforgeeks.org/mongodb/mongodb-comparison-query-operators/) are used to _implement comparisons_, such as "greater than" or "less than" (similar as, e.g. `>` and `<` in SQL).
+- [Logical query operators](https://www.geeksforgeeks.org/mongodb/mongodb-logical-query-operators/) are used to _combine conditions_, such as "condition OR other condition" (similar as, e.g. `OR` and `AND` in SQL).
+- [Array field query operations](https://www.mongodb.com/docs/manual/tutorial/query-arrays/) are used to _query array fields_, such as the `genres` field in the `books` collection.
 
 Finally, implement and execute the following queries in the MongoDB Shell:
 
-1. Find the book "To Kill a Mockingbird"
-2. Find the book "To Kill a Mockingbird" using its `_id` field (use the document's `_id` field value you got from the previous query's result). 💡 Hint: note that `ObjectId("507f1f77bcf86cd799439011")` is an `ObjectId` object whereas `"507f1f77bcf86cd799439011"` is a string
-3. Find the books that have more than fifteen copies. Sort the books in ascending order by the number copies
-4. Find the books written by the author "Leo Tolstoy" before the year 1890. Sort the books in descending order by the publishing year
-5. Find the books written by either the author "Jane Austen" or "Aldous Huxley". Sort the books in ascending order by the author's name and descending order by the publishing year
-6. Find the books that are published after the year 1950 and before the year 2020
-7. Find the books that have either the "Thriller" or the "Drama" genre
+1. Find the book "To Kill a Mockingbird".
+2. Find the book "To Kill a Mockingbird" using its `_id` field (use the document's `_id` field value you got from the previous query's result). 💡 Hint: note that `ObjectId("507f1f77bcf86cd799439011")` is an `ObjectId` object whereas `"507f1f77bcf86cd799439011"` is a string.
+3. Find the books that have more than fifteen copies. Sort the books in ascending order by the number copies.
+4. Find the books written by the author "Leo Tolstoy" before the year 1890. Sort the books in descending order by the publishing year.
+5. Find the books written by either the author "Jane Austen" or "Aldous Huxley". Sort the books in ascending order by the author's name and descending order by the publishing year.
+6. Find the books that are published after the year 1950 and before the year 2020.
+7. Find the books that have either the "Thriller" or the "Drama" genre.
 
 > [!IMPORTANT]  
 > Exercise 3 👨‍💻: Save the mentioned seven queries to the submission file.
@@ -77,11 +80,11 @@ Read the [Update Documents](https://www.mongodb.com/docs/manual/tutorial/update-
 > [!NOTE]
 > Choose the update operation based on the number of documents you intend to update (one or many).
 
-1. Change the publishing year of the book "The Hobbit" to 1937 and the ebook status to true
-2. Set the number of copies as zero for all books written by the author "John Ronald Reuel Tolkien"
-3. Increase the number of copies of books published after the year 1920 by two, _without reading the current values_. 💡 Hint: [$inc](https://www.mongodb.com/docs/manual/reference/operator/update/inc/) operator
-4. Add the genre "American literature" for all books written by the author "Colleen Hoover", _without reading the current value_. 💡 Hint: [$push](https://www.mongodb.com/docs/manual/reference/operator/update/push/#mongodb-update-up.-push) operator
-5. Remove the genre "Non-fiction" from the book "Island", _without reading the current value_. 💡 Hint: [$pull](https://www.mongodb.com/docs/manual/reference/operator/update/pull/) operator
+1. Change the publishing year of the book "The Hobbit" to 1937 and the ebook status to true.
+2. Set the number of copies as zero for all books written by the author "John Ronald Reuel Tolkien".
+3. Increase the number of copies of books published after the year 1920 by two, _without reading the current number of copies_. 💡 Hint: [$inc](https://www.mongodb.com/docs/manual/reference/operator/update/inc/) operator.
+4. Add the genre "American literature" for all books written by the author "Colleen Hoover", _without reading the current genres_. 💡 Hint: [$push](https://www.mongodb.com/docs/manual/reference/operator/update/push/#mongodb-update-up.-push) operator.
+5. Remove the genre "Non-fiction" from the book "Island", _without reading the current genres_. 💡 Hint: [$pull](https://www.mongodb.com/docs/manual/reference/operator/update/pull/) operator.
 
 > [!IMPORTANT]  
 > Exercise 4 👨‍💻: Save the mentioned five queries to the submission file.
@@ -93,40 +96,40 @@ Read the [Delete Documents](https://www.mongodb.com/docs/manual/tutorial/remove-
 > [!NOTE]
 > Choose the delete operation based on the number of documents you intend to delete (one or many). This avoids accidentally deleting too many documents.
 
-1. Delete the book "Pride and Prejudice"
-2. Delete all the books which have no copies and are ebooks
+1. Delete the book "Pride and Prejudice".
+2. Delete all the books which have no copies and are ebooks.
 
 > [!IMPORTANT]  
 > Exercise 5 👨‍💻: Save the mentioned two queries to the submission file.
 
 ## Aggregation operations
 
-MongoDB supports similar aggregation operations as SQL's `GROUP BY` clause and aggregation functions such as `COUNT` and `SUM`. Read the [Aggregation in MongoDB](https://www.geeksforgeeks.org/mongodb/aggregation-in-mongodb/) guide. Then, familiarize yourself with the following aggregation concepts:
+MongoDB supports similar aggregation operations as SQL's `GROUP BY` clause and aggregation functions (called _accumulators_ in MongoDB) such as `COUNT` and `SUM`. Read the [Aggregation in MongoDB](https://www.geeksforgeeks.org/mongodb/aggregation-in-mongodb/) guide. Then, familiarize yourself with the following aggregation concepts:
 
-- [$count](https://www.geeksforgeeks.org/mongodb/how-to-group-by-and-count-in-mongodb/) is used for _counting documents_ (similar as `COUNT` in SQL) and [$sum](https://www.mongodb.com/docs/manual/reference/operator/aggregation/sum/) is used for _summing field values_ (similar as `SUM` in SQL)
-- [$group](https://www.mongodb.com/docs/manual/reference/operator/aggregation/group/) is used for _grouping documents_ before some aggregate operator (e.g. `$sum`) is applied to each group (similar as `GROUP BY` in SQL)
-- [$match](https://www.geeksforgeeks.org/mongodb/mongodb-match-operator/) is used to _filter rows_ before or after some other aggregation pipeline operation is performed
+- [$count](https://www.geeksforgeeks.org/mongodb/how-to-group-by-and-count-in-mongodb/) accumulator is used for _counting documents_ (similar as `COUNT` in SQL) and [$sum](https://www.mongodb.com/docs/manual/reference/operator/aggregation/sum/) accumulator is used for _summing field values_ (similar as `SUM` in SQL).
+- [$group](https://www.mongodb.com/docs/manual/reference/operator/aggregation/group/) is used for _grouping documents_ before some accumulator (e.g. `$sum`) is applied to each group (similar as `GROUP BY` in SQL).
+- [$match](https://www.geeksforgeeks.org/mongodb/mongodb-match-operator/) is used to _filter rows_ before or after some other aggregation pipeline operation is performed.
 
 Finally, implement and execute the following aggregations in the MongoDB Shell:
 
-1. Display the total number of books
-2. Display the total number of book copies
-3. Display the number of books by each author
-4. Display the number of book copies by each author
-5. Display the total number of book copies of books that are not ebooks and have the "Romance" genre. 💡 Hint: pay attention to the order of the aggregation operations (that is, the order of the aggregation operation objects in the argument array)
-6. ⭐ Bonus: Display the publishing year of each author's first and latest book. 💡 Hint: find suitable [aggregation accumulators](https://www.mongodb.com/docs/manual/reference/mql/accumulators/)
+1. Display the total number of books.
+2. Display the total number of book copies.
+3. Display the number of books by each author.
+4. Display the number of book copies by each author.
+5. Display the total number of book copies of books that are not ebooks and have the "Romance" genre. 💡 Hint: pay attention to the order of the aggregation operations (that is, the order of the aggregation operation objects in the argument array).
+6. ⭐ Bonus: Display the publishing year of each author's first and latest book. 💡 Hint: find suitable [aggregation accumulators](https://www.mongodb.com/docs/manual/reference/mql/accumulators/).
 
 > [!IMPORTANT]  
 > Exercise 6 👨‍💻: Save the mentioned five queries to the submission file.
 
-## Data modeling – embedding data or using references
+## Data modeling – embedding data and using references
 
-Now that we know how basic database operations are performed in MongoDB, it is time to discuss data modeling. MongoDB's data model is very flexible, and there are usually many different ways to achieve the same kind of data requirements. To understand the core concepts and how to establish relationships in the MongoDB data model, start by reading the [Embedded Data Versus References](https://www.mongodb.com/docs/manual/data-modeling/concepts/embedding-vs-references/) guide.
+Now that we know how basic database operations are performed in MongoDB, it is time to discuss data modeling. MongoDB's data model is very flexible, and there are usually many different ways to achieve the same kind of data requirements. To understand the core concepts and how to establish relationships in the MongoDB data model, start by reading the [Embedded Data in Your MongoDB Schema](https://www.mongodb.com/docs/manual/data-modeling/embedding/) and [Reference Data in Your MongoDB Schema](https://www.mongodb.com/docs/manual/data-modeling/referencing/) guides.
 
 Let's consider the case where we would need to store more author-related information to the `books` collection, such as the author's nationality and year of birth. We would need to consider two alternative implementations:
 
-1. Adding new fields to the `books` collection
-2. Adding a new `authors` collection and referencing it from the `books` collection documents
+1. Adding new fields to the `books` collection.
+2. Adding a new `authors` collection and referencing it from the `books` collection documents.
 
 With the first approach, we could represent the author as an object with the required information. Let's, for example, consider the following `books` document:
 
@@ -221,7 +224,7 @@ Here's the same document in the JSON format:
 
 This is a very similar implementation to having a foreign key referencing a primary key in a relational database. It is worth noting, however, that _in MongoDB, there's no foreign key concept_ and because of that, no foreign key constraints.
 
-The [MongoDB Relationships](https://dev.to/chafroudtarek/mongodb-relationshipsone-to-oneone-to-manymany-to-many-njc) article covers more examples of different kinds of relationships between collections, for example, how to implement many-to-many relationships. The article describes the reference approach, but it is always possible to use embedded documents as well. However, it is worth noting the possible drawbacks mentioned above.
+The [MongoDB Relationships](https://dev.to/chafroudtarek/mongodb-relationshipsone-to-oneone-to-manymany-to-many-njc) article covers more examples of different kinds of relationships between collections, for example, how to implement many-to-many relationships. The article describes how to use both embedded documents and document references and the benefits and drawbacks of these approaches.
 
 > [!IMPORTANT]  
 > Exercise 7 👨‍💻: Read the [Data consistency](https://www.mongodb.com/docs/manual/data-modeling/data-consistency/) documentation. Describe what kind of problems the lack of [referential integrity](https://www.ibm.com/docs/en/informix-servers/14.10?topic=integrity-referential) support causes in MongoDB, for example, in the previous example? What kind of application-level measures would be required to achieve data consistency? You can consider cases such as creating a `books` collection document and deleting an `authors` collection document in the previous example.
@@ -233,9 +236,9 @@ The [MongoDB Relationships](https://dev.to/chafroudtarek/mongodb-relationshipson
 
 Now that we know about the MongoDB data model and the basic database operations, it is time to design a small MongoDB database of our own. These are the requirements for the project's data model:
 
-- Should consist of _at least two collections_
-- At least one relationship between two collections should be implemented using an id reference (like with the `books` and `authors` collections in the example above). Otherwise, feel free to use embedded documents as well
-- At least two collections should each have at least three fields (on top of the `_id` field) with more than one different data type (e.g., not only string-type fields)
+- Should consist of _at least two collections_.
+- At least one relationship between two collections should be implemented using an id reference (like with the `books` and `authors` collections in the example above). Otherwise, feel free to use embedded documents as well.
+- At least two collections should each have at least three fields (on top of the `_id` field) with more than one different data type (e.g., not only string-type fields).
 
 Here are two examples of project ideas for inspiration:
 
@@ -256,50 +259,6 @@ Come up with your own database or use the ideas above. Feel free to make any mod
 
 > [!IMPORTANT]  
 > Exercise 9 👨‍💻: Create _a new database_ for your project and add the collections in the MongoDB Compass. Then, insert a few documents into each collection as test data using the MongoDB Shell. Take a screenshot of the database view in the MongoDB Compass (visible after clicking the database name on the connections list) and add it to the submission file. The screenshot should contain the database's name and the list of the database's collections. Revisit [Manage Databases in Compass](https://www.mongodb.com/docs/compass/current/databases/), [Manage Collections in Compass](https://www.mongodb.com/docs/compass/current/collections/), and [Insert Documents](https://www.mongodb.com/docs/manual/tutorial/insert-documents/) guides if you have trouble.
-
-## ⭐ Bonus: Data validation with JSON Schema
-
-Even if the structure of the collection's document is flexible, we usually still want to enforce some rules for the documents. For example, in the `books` collection, the `copies` attribute should only contain integer values greater than `0` and `genres` attribute an array of non-empty strings.
-
-MongoDB supports document validation with the widely adopted [JSON Schema](https://json-schema.org/) validation standard. JSON Schema is a standard for describing the structure, rules, and constraints of JSON data, e.g. a document. For example, the following JSON Schema could be used to validate a `book` document:
-
-```json
-{
-  "bsonType": "object",
-  "required": ["title", "author", "year", "genres", "copies", "ebook"],
-  "properties": {
-    "title": {
-      "bsonType": "string",
-      "minLength": 1
-    },
-    "author": {
-      "bsonType": "string",
-      "minLength": 1
-    },
-    "year": {
-      "bsonType": "int",
-      "minimum": 0
-    },
-    "genres": {
-      "bsonType": "array",
-      "items": {
-        "bsonType": "string"
-      }
-    },
-    "copies": {
-      "bsonType": "int",
-      "minimum": 0
-    },
-    "ebook": {
-      "bsonType": "boolean"
-    }
-  }
-}
-```
-
-Every time a document is inserted or updated in the collection with JSON Schema validation enabled, the document's structure must match the structure defined by the schema.
-
-You can read more about how to enable JSON Schema validation for a collection by following the [MongoDB Schema Validation: A Practical Guide with Examples](https://www.datacamp.com/tutorial/mongodb-schema-validation) guide.
 
 ---
 

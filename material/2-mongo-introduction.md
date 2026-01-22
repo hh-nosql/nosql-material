@@ -1,10 +1,11 @@
 # Introduction to MongoDB database management system
 
-> _"MongoDB is a document database with the scalability and flexibility that you want with the querying and indexing that you need."_
+> _"MongoDB is a document database with the scalability and flexibility that you want with the querying and indexing that you need."_ 
+> — [What is MongoDB?](https://www.mongodb.com/company/what-is-mongodb)
 
 In the second part of the course, we will learn the principles of the MongoDB database management system, which is one of the most widely adopted NoSQL database management systems. During this part, you will learn about the principles of the data model in the MongoDB database management system, how to install the MongoDB database management system and the MongoDB Compass tool, and how to create a database in the MongoDB database management system.
 
-The MongoDB database management system is a widely adopted NoSQL database management system. Based on the [State of Database Survey](https://stateofdb.com/) in 2023, MongoDB was among the three most well-known and widely used database management systems, along with PostgreSQL and MySQL. MongoDB has many use cases, web development being one of them. It is the database technology in the popular [MERN](https://www.mongodb.com/resources/languages/mern-stack) technology stack, which is widely used to develop web applications.
+The MongoDB database management system is a widely adopted NoSQL database management system. Based on the [State of Database Survey](https://stateofdb.com/) in 2023, MongoDB was among the three most well-known and widely used database management systems, along with PostgreSQL and MySQL. MongoDB has many use cases, web development being one of them. It is the database technology in the popular [MERN](https://www.mongodb.com/resources/languages/mern-stack) technology stack (MongoDB, Express, React, and Node), which is widely used to develop web applications.
 
 MongoDB is a document-oriented database. Familiarize yourself with document-oriented databases by reading the article [What is a Document Database](https://www.mongodb.com/resources/basics/databases/document-databases) and with the principles of the MongoDB database management system by reading the following articles:
 
@@ -23,7 +24,7 @@ So that we can start practicing the usage of MongoDB we need to install the data
 
 ## User interfaces for MongoDB
 
-[MongoDB Compass](https://www.mongodb.com/products/tools/compass) is a graphical user interface for operating MongoDB. Other user interfaces for the purpose are e.g. [MongoDB Shell](https://www.mongodb.com/docs/mongodb-shell/) and [MongoDB Vs Code extension]( https://www.mongodb.com/products/tools/vs-code). We will be using MongoDB Compass and the integrated MongoDB Shell in our examples.
+[MongoDB Compass](https://www.mongodb.com/products/tools/compass) is a graphical user interface for operating MongoDB. Other user interfaces for the purpose are e.g. [MongoDB Shell](https://www.mongodb.com/docs/mongodb-shell/) and [MongoDB for Visual Studio Code extension]( https://www.mongodb.com/products/tools/vs-code). We will be using MongoDB Compass and the integrated MongoDB Shell in our examples.
 
 ```mermaid
 flowchart LR

@@ -12,6 +12,9 @@ The [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) operat
 > [!IMPORTANT]  
 > Exercise 1 👨‍💻: Create a new Word document for the exercises in this part. Add the information mentioned in the exercises to the file for a later submission. You can include the database queries as text or as [screenshots](https://www.take-a-screenshot.org/) of the MongoDB Shell (no need to include the query result in the screenshot). Once you are done with the exercises in this part, submit the file to the "Database operations in MongoDB" Moodle submission in PDF format.
 
+> [!CAUTION]
+> Using generative AI tools (e.g., ChatGPT or Copilot) to generate solutions directly is strictly forbidden and considered plagiarism. Misusing these tools won't help you learn, and you won't get anything out of the course.
+
 ### Inserting documents
 
 > [!WARNING]  

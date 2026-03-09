@@ -22,11 +22,11 @@ python -m pip install pymongo
 > If the command doesn't work, try the `python3` command instead of the `python` command. The correct command depends on the Python installation.
 
 > [!TIP] 
-> In more complicated Python projects, packages are installed within project-specific [virtual envinronments](https://www.w3schools.com/python/python_virtualenv.asp).
+> In more complicated Python projects, packages are installed within project-specific [virtual environments](https://www.w3schools.com/python/python_virtualenv.asp).
 
 Next, let's do some simple MongoDB operations with PyMongo in _small steps_:
 
-1️⃣ Create a Python program which imports the `pymongo` library:
+1️⃣ Create a Python program that imports the `pymongo` library:
 
 ```python
 from pymongo import MongoClient
@@ -37,7 +37,7 @@ from pymongo import MongoClient
 ```python
 from pymongo import MongoClient
 
-# "mongodb://localhost:27017/" is a connection string. It specifies which database server we are connecting.
+# "mongodb://localhost:27017/" is a connection string. It specifies which database server we are connecting to
 # In this case, we connect to the MongoDB server on our own computer (localhost) on port 27017 (the default port for MongoDB)
 client = MongoClient("mongodb://localhost:27017/")
 # Change "library" to match the name of your database
@@ -45,7 +45,7 @@ db = client["library"]
 ```
 
 > [!TIP]  
-> If your want to connect to your cluster in the MongoDB Atlas instead, go trough the [Connect to MongoDB](https://www.mongodb.com/docs/languages/python/pymongo-driver/current/connect/#atlas) guide. We want to keep the MongoDB Atlas connection string a secret to avoid unwanted people accessing our database. To achieve this, we shouldn't store the connection string in the code, instead we should use an [environment variable](https://www.geeksforgeeks.org/using-python-environment-variables-with-python-dotenv/) for the connection string.
+> If you want to connect to your cluster in the MongoDB Atlas instead, go through the [Connect to MongoDB](https://www.mongodb.com/docs/languages/python/pymongo-driver/current/connect/#atlas) guide. We want to keep the MongoDB Atlas connection string secret to prevent unauthorized access to our database. To achieve this, we shouldn't store the connection string in the code; instead, we should use an [environment variable](https://www.geeksforgeeks.org/using-python-environment-variables-with-python-dotenv/) for the connection string.
 
 3️⃣ Print all the documents in one of the collections you inserted documents for in the previous part using the [find](https://www.w3schools.com/python/python_mongodb_find.asp) method. You can iterate the return value of the method using a `for` loop. The iterated items are [dictionaries](https://www.w3schools.com/python/python_dictionaries.asp) in which the keys match the document's fields:
 
@@ -65,7 +65,7 @@ for book in books:
   # Try printing all the fields of a document
 ```
 
-4️⃣ Try out other operations, e.g. by [inserting a document](https://www.w3schools.com/python/python_mongodb_insert.asp) into a collection
+4️⃣ Try out other operations, e.g., by [inserting a document](https://www.w3schools.com/python/python_mongodb_insert.asp) into a collection
 
 Execute the program after each step and see that there are no errors.
 
@@ -74,7 +74,7 @@ Execute the program after each step and see that there are no errors.
 
 ## Database application
 
-Now that we know the basics of PyMongo, the last part of the course is to implement a database application for our project. At this point, you should have already designed the database schema and inserted some test data to the database. Use Python and PyMongo to implement a database application that uses the database. These are the requirements for the application:
+Now that we know the basics of PyMongo, the last part of the course is to implement a database application for our project. At this point, you should have already designed the database schema and inserted some test data into the database. Use Python and PyMongo to implement a database application that uses the database. These are the requirements for the application:
 
 - _Some kind of user interface_. The easiest way is to implement a command-line user interface that reads user input from the command line with the [input](https://www.w3schools.com/python/ref_func_input.asp) function and prints information with the [print](https://www.w3schools.com/python/ref_func_print.asp) function. You can use [this](./application.py) Python application as a starting point. If you want, you can also do something fancier, like a web application using [Flask](https://flask.palletsprojects.com/en/3.0.x/quickstart/)
 - Usage of _all CRUD (create, read, update, delete) operations_ for at least two collections. For the read operation, listing all documents in the collection is enough
@@ -101,7 +101,7 @@ from bson.objectid import ObjectId
 
 book_id_to_find = "6780b2d277f48b749b940ee4"
 
-# ❌ Using a string won't work and the following code won't find the correct document
+# ❌ Using a string won't work, and the following code won't find the correct document
 db.books.find_one({ "_id": book_id_to_find })
 
 # ✔️ Using an ObjectId object will work
@@ -139,9 +139,9 @@ In this case, the author could also be provided in a more user-friendly way by p
 
 If you want to expand your application, here are some ideas for optional features:
 
-- Filtering information (e.g,. searching books based on name, author, category, or other properties)
+- Filtering information (e.g, searching books based on name, author, category, or other properties)
 - Statistics (e.g., number of books of each author). The [Aggregation Pipelines](https://www.w3schools.com/mongodb/mongodb_aggregations_intro.php) guide has examples of aggregation operations with PyMongo
-- To allow multiple users using the same database, instead of a local MongoDB database, create a cluster in the [MongoDB Atlas](https://www.mongodb.com/products/platform/cloud) and [connect to it in your application](https://www.mongodb.com/docs/languages/python/pymongo-driver/current/connect/#atlas). We want to keep the connection string a secret to avoid unwanted people accessing our database. To achieve this, _we shouldn't store the connection string in the code_, instead we should use an [environment variable](https://www.geeksforgeeks.org/using-python-environment-variables-with-python-dotenv/) for the connection string
+- To allow multiple users to use the same database, instead of a local MongoDB database, create a cluster in the [MongoDB Atlas](https://www.mongodb.com/products/platform/cloud) and [connect to it in your application](https://www.mongodb.com/docs/languages/python/pymongo-driver/current/connect/#atlas). We want to keep the connection string a secret to avoid unwanted people accessing our database. To achieve this, _we shouldn't store the connection string in the code_, instead, we should use an [environment variable](https://www.geeksforgeeks.org/using-python-environment-variables-with-python-dotenv/) for the connection string
 
 ```python
 # ❌ Bad, we don't want to expose the connection string or other secrets in the code

@@ -37,6 +37,8 @@ from pymongo import MongoClient
 ```python
 from pymongo import MongoClient
 
+# "mongodb://localhost:27017/" is a connection string. It specifies which database server we are connecting.
+# In this case, we connect to the MongoDB server on our own computer (localhost) on port 27017 (the default port for MongoDB)
 client = MongoClient("mongodb://localhost:27017/")
 # Change "library" to match the name of your database
 db = client["library"]

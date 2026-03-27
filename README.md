@@ -26,13 +26,12 @@ Instead, you should use generative AI tools to ask advice, such as "What are the
 
 After completing this course, you know how to...
 
-- Explain the main characteristics of NoSQL databases
-- Explain the main differences between NoSQL and relational databases
-- Provide examples of the main application areas of NoSQL databases
-- Explain the principles of the data model in the MongoDB database management system
-- Install the MongoDB database management system and the MongoDB Compass tool
-- Create a database in the MongoDB database management system
-- Perform database operations in the MongoDB database
+- Explain the main characteristics of NoSQL database management systems
+- Explain the main differences between NoSQL and relational DBMSs
+- Provide examples of the main application areas of NoSQL DBMSs
+- Explain the principles of the data model in the MongoDB DBMS
+- Install the MongoDB DBMS and the MongoDB Compass tool
+- Create a database and perform database operations with the MongoDB DBMS
 - Implement a simple Python application that operates on a MongoDB database
 
 ## 📖 Contents

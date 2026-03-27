@@ -1,7 +1,7 @@
 # Introduction to NoSQL Databases
 
 > [!WARNING]  
-> Read this section carefully before heading further into the materials! If you didn't attend the kick-off session, also check the [session slides](./slides/introduction.pdf).
+> Read this section carefully before heading further into the materials! If you didn't attend the kick-off session, also check the [introduction slides](./slides/introduction.pdf).
 
 What are NoSQL database management systems, and how do they differ from relational database management systems? What is the MongoDB database management system, and how can it be used to store and manage data? How can MongoDB be used with the Python programming language to implement a database application? The purpose of this course is to answer these and other questions related to NoSQL database management systems.
 
@@ -26,13 +26,12 @@ Instead, you should use generative AI tools to ask advice, such as "What are the
 
 After completing this course, you know how to...
 
-- Explain the main characteristics of NoSQL databases
-- Explain the main differences between NoSQL and relational databases
-- Provide examples of the main application areas of NoSQL databases
-- Explain the principles of the data model in the MongoDB database management system
-- Install the MongoDB database management system and the MongoDB Compass tool
-- Create a database in the MongoDB database management system
-- Perform database operations in the MongoDB database
+- Explain the main characteristics of NoSQL database management systems
+- Explain the main differences between NoSQL and relational DBMSs
+- Provide examples of the main application areas of NoSQL DBMSs
+- Explain the principles of the data model in the MongoDB DBMS
+- Install the MongoDB DBMS and the MongoDB Compass tool
+- Create a database and perform database operations with the MongoDB DBMS
 - Implement a simple Python application that operates on a MongoDB database
 
 ## 📖 Contents

@@ -1,0 +1,8 @@
+.dbms-logo-watermark {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 150px;
+  opacity: 0.5;
+  pointer-events: none;
+}

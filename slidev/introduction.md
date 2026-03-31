@@ -16,8 +16,8 @@ You are about to dive into the exciting world outside relational databases... ðŸ
 ## About the course
 
 - This course focuses on the diverse and widely used family of non-relational database management systems, commonly called **NoSQL database management systems**
-- We will learn the core principles of NoSQL DBMSs, how they differ from relational DBMSs, and their main benefits and challenges
-- The main technology in the course is **MongoDB**
+- We will learn the core principles of NoSQL DBMSs, how they differ from relational DBMSs, their application areas, and their benefits and challenges
+- The main focus in the course is the **MongoDB** NoSQL DBMS, which is among the most popular DBMSs
 - We will cover MongoDB data management principles, data modeling, database operations, and database programming in Python
 - The prerequisites are the **Data Management and Databases** and **Python Programming** courses
 

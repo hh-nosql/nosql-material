@@ -11,10 +11,10 @@ Familiarize yourself with the NoSQL database management systems by reading the [
 
 <!-- TODO -->
 > [!WARNING]  
-> To confirm the course participation, pass the "Introduction to NoSQL database management systems" Moodle exam before Friday 3.4. at 8:00.
+> To confirm the course participation, pass the "Introduction to NoSQL database management systems" Moodle exam before Thursday 29.10. at 23:59.
 
 > [!IMPORTANT]  
-> Exercise 1 👨‍💻: Read the materials mentioned above. Then, take and pass the "Introduction to NoSQL database management systems" multiple-choice Moodle exam related to the principles of the NoSQL database management systems. You have 45 minutes to complete the exam, and passing grade requires at least 9/13 points. You can retake the exam two times in case you fail.
+> Exercise 1 👨‍💻: Read the materials mentioned above. Then, take and pass the "Introduction to NoSQL database management systems" multiple-choice Moodle exam related to the principles of the NoSQL database management systems. You have 45 minutes to complete the exam, and passing grade requires at least 69% of exam points. You can retake the exam two times in case you fail.
 
 ---
 

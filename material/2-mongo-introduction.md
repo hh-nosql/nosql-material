@@ -16,7 +16,7 @@ MongoDB is a document-oriented database. Familiarize yourself with document-orie
 Once you have read through the articles, test your knowledge by completing the "Introduction to MongoDB database management system" Moodle exam. After passing the exam, move on to the next topic in this part.
 
 > [!IMPORTANT]  
-> Exercise 1 👨‍💻: Read the four articles mentioned above. Then, take and pass the "Introduction to MongoDB database management system" multiple-choice Moodle exam related to the principles of the MongoDB database management system. You have 45 minutes to complete the exam, and passing grade requires at least 9/13 points. You can retake the exam two times in case you fail.
+> Exercise 1 👨‍💻: Read the four articles mentioned above. Then, take and pass the "Introduction to MongoDB database management system" multiple-choice Moodle exam related to the principles of the MongoDB database management system. You have 45 minutes to complete the exam, and passing grade requires at least 69% of exam points. You can retake the exam two times in case you fail.
 
 ## Installing MongoDB on our computer
 

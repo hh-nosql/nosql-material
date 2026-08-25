@@ -51,8 +51,8 @@ You are about to dive into the exciting world outside relational databases... ðŸ
 
 <!-- TODO -->
 - The course schedule is flexible, and there are only **two deadlines**:
-  - Passing the Moodle exam of the first part **before Friday 3.4. at 8:00**
-  - Finishing everything else **before Sunday 17.5. at 23:59.**
+  - Passing the Moodle exam of the first part **before Thursday 29.10. at 23:59**
+  - Finishing everything else **before Sunday 13.12. at 23:59**
 - The course is assessed as **pass or fail**. A passing grade requires passing both Moodle exams and completing the other exercises according to their requirements
 - If your submission has issues, the teacher will request changes and you have a chance to resubmit your work
 

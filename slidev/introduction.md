@@ -188,8 +188,9 @@ GET teacher:h02680
   - **MongoDB** and **Redis** NoSQL DBMSs are in the **top four most widely used DBMSs** right after PostgreSQL and MySQL
   - 74.4% of respondents have used MongoDB and 73.3% have used Redis
 - This indicates that **NoSQL DBMSs are widely acknowledged and used in the industry** despite not being as popular as certain relational DBMSs
+- Major companies such as Netflix, Amazon and Spotify use NoSQL DBMs such as Cassandra, DynamoDB and BigTable, to power their platforms
 - In web development, different kinds of **tech stacks containing MongoDB are widely adopted**
-- MERN (MongoDB, Express, React, Node) and MEAN (MongoDB, Express, Angular, Node) are acronyms for such common tech stacks
+  - MERN (MongoDB, Express, React, Node) and MEAN (MongoDB, Express, Angular, Node) are acronyms for such common tech stacks
 
 ---
 layout: image-left

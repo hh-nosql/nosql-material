@@ -118,6 +118,7 @@ Finally, implement and execute the following aggregations in the MongoDB Shell:
 4. Display the number of book copies by each author.
 5. Display the total number of book copies of books that are not ebooks and have the "Romance" genre. 💡 Hint: pay attention to the order of the aggregation operations (that is, the order of the aggregation operation objects in the argument array).
 6. ⭐ Bonus: Display the publishing year of each author's first and latest book. 💡 Hint: find suitable [aggregation accumulators](https://www.mongodb.com/docs/manual/reference/mql/accumulators/).
+7. ⭐ Bonus: Display the number of books in each category. Sort the books based on the number of books in descending order. 💡 Hint: [$unwind](https://www.mongodb.com/docs/manual/reference/operator/aggregation/unwind/) and [$sort](https://www.mongodb.com/docs/manual/reference/operator/aggregation/sort/).
 
 > [!IMPORTANT]  
 > Exercise 6 👨‍💻: Save the mentioned five queries to the submission file.
